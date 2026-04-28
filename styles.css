@@ -1,0 +1,433 @@
+/* ================================
+   MESTRE Brand Guidelines Colors
+   ================================ */
+:root {
+    --primary-orange: #F57C00;
+    --black: #000000;
+    --white: #FFFFFF;
+    --dark-brown: #2B1B0F;
+    --light-gray: #f5f5f5;
+    --dark-gray: #333;
+    --text-gray: #666;
+}
+
+/* ================================
+   Global Styles
+   ================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at top left, rgba(245, 124, 0, 0.10), transparent 30%),
+                radial-gradient(circle at bottom right, rgba(43, 27, 15, 0.06), transparent 25%),
+                #faf8f5;
+    color: var(--dark-gray);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ================================
+   Container & Layout
+   ================================ */
+.container {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* ================================
+   Header & Logo
+   ================================ */
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 30px 20px;
+    background: var(--dark-brown);
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(43, 27, 15, 0.25);
+    position: relative;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.15));
+    background: transparent;
+    object-fit: contain;
+}
+
+.main-title {
+    font-family: 'Bevan', serif;
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin: 15px 0 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.12);
+}
+
+.main-title.small {
+    font-size: 2rem;
+    margin: 10px 0 5px;
+    color: var(--white);
+}
+
+.landing-header {
+    text-align: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.landing-logo {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+.landing-title {
+    font-family: 'Bevan', serif;
+    font-size: clamp(3rem, 7vw, 4.5rem);
+    color: var(--black);
+    margin-bottom: 12px;
+    letter-spacing: 4px;
+    line-height: 1.05;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.landing-subtitle {
+    font-size: 1rem;
+    color: var(--dark-brown);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.95);
+    letter-spacing: 2px;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+}
+
+/* ================================
+   Menu Content
+   ================================ */
+.menu-content {
+    margin-bottom: 60px;
+}
+
+/* ================================
+   Menu Sections
+   ================================ */
+.menu-section {
+    margin-bottom: 50px;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.section-title {
+    font-family: 'Bevan', serif;
+    font-size: 2.5rem;
+    color: var(--black);
+    font-weight: 900;
+    letter-spacing: 2px;
+    white-space: nowrap;
+}
+
+.section-divider {
+    flex: 1;
+    height: 3px;
+    background: linear-gradient(to right, var(--primary-orange), transparent);
+    border-radius: 2px;
+}
+
+/* ================================
+   Items Grid
+   ================================ */
+.items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   Menu Items
+   ================================ */
+.menu-item {
+    background: var(--white);
+    border-left: 4px solid var(--primary-orange);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(245, 124, 0, 0.15);
+    border-left-color: var(--dark-brown);
+}
+
+.item-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 10px;
+}
+
+.item-description {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    line-height: 1.5;
+}
+
+.item-price {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--primary-orange);
+    margin-top: 10px;
+}
+
+/* ================================
+   Beer Item Specific
+   ================================ */
+.beer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.beer-name {
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 5px;
+}
+
+.beer-flag {
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+.beer-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+.beer-brewery {
+    font-size: 0.85rem;
+    color: var(--primary-orange);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.beer-info {
+    display: flex;
+    gap: 15px;
+    font-size: 0.85rem;
+    color: var(--text-gray);
+    margin-bottom: 8px;
+}
+
+.beer-badge {
+    display: inline-block;
+    background: rgba(245, 124, 0, 0.1);
+    color: var(--primary-orange);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* ================================
+   Loading & Empty States
+   ================================ */
+.loading-placeholder {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-gray);
+    font-style: italic;
+}
+
+/* ================================
+   API Info
+   ================================ */
+.api-info {
+    text-align: center;
+    padding: 15px;
+    background: rgba(245, 124, 0, 0.05);
+    border-radius: 8px;
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* ================================
+   Footer
+   ================================ */
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 2px solid var(--primary-orange);
+    color: var(--text-gray);
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+/* ================================
+   Landing Page Styles
+   ================================ */
+.landing-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.selection-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.selection-box {
+    background: var(--primary-orange);
+    border: none;
+    border-radius: 24px;
+    padding: 28px 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+    box-shadow: 0 14px 35px rgba(245, 124, 0, 0.28);
+    width: 100%;
+}
+
+.selection-box:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(245, 124, 0, 0.38);
+    background: #e06500;
+}
+
+.selection-title {
+    font-family: 'Bevan', serif;
+    font-size: clamp(2.4rem, 5vw, 3.5rem);
+    color: var(--white);
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.selection-description {
+    display: none;
+}
+
+.back-button {
+    background: var(--primary-orange);
+    color: var(--white);
+    border: none;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.25s ease, background 0.25s ease;
+    margin-left: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.back-button:hover {
+    background: #e06500;
+    transform: translateY(-2px);
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* ================================
+   Responsive Design
+   ================================ */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .items-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .section-divider {
+        width: 100%;
+    }
+
+    .header {
+        padding: 30px 15px;
+        margin-bottom: 40px;
+    }
+
+    .logo {
+        max-width: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .menu-item {
+        padding: 20px;
+    }
+}

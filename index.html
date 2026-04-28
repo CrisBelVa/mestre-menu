@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESTRE - Craft Beer Bar Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Landing Page -->
+        <div id="landing-page" class="landing-page">
+            <header class="landing-header">
+                <img src="mestre-logo.png" alt="MESTRE Logo" class="logo landing-logo">
+                <h1 class="landing-title">BEM-VINDO!</h1>
+                <p class="landing-subtitle">Escolha uma seção para iniciar</p>
+            </header>
+
+            <!-- Selection Boxes -->
+            <div class="selection-container">
+                <div class="selection-box" data-section="tapas">
+                    <h2 class="selection-title">TAPAS</h2>
+                </div>
+                <div class="selection-box" data-section="beers">
+                    <h2 class="selection-title">ON TAP</h2>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menu Content (Hidden initially) -->
+        <div id="menu-content" class="menu-content hidden">
+            <!-- Header with Logo -->
+            <header class="header">
+                <div class="logo-section">
+                    <img src="mestre-logo.png" alt="MESTRE Logo" class="logo">
+                </div>
+                <h1 class="main-title small">MENU</h1>
+                <button class="back-button" id="back-button">← Back</button>
+            </header>
+
+            <!-- Menu Sections -->
+            <main class="menu-content">
+                <!-- Tapas Section -->
+                <section class="menu-section" id="tapas-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Tapas</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div class="items-grid">
+                        <div class="menu-item">
+                            <h3 class="item-name">Olives</h3>
+                            <p class="item-description">Olives with oil and garlic</p>
+                            <div class="item-price">€4.50</div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="item-name">Empanadas</h3>
+                            <p class="item-description">Crispy pastry pockets filled with savory flavors</p>
+                            <div class="item-price">€8.50</div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="item-name">Patacones</h3>
+                            <p class="item-description">Twice-fried green plantain slices, golden and crispy</p>
+                            <div class="item-price">€6.00</div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="item-name">Papas Fritas</h3>
+                            <p class="item-description">Perfectly seasoned crispy French fries</p>
+                            <div class="item-price">€5.50</div>
+                        </div>
+                        <div class="menu-item">
+                            <h3 class="item-name">Yucas Fritas</h3>
+                            <p class="item-description">Golden fried cassava root, served with dipping sauce</p>
+                            <div class="item-price">€7.00</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Beers on Tap Section -->
+                <section class="menu-section" id="beers-section">
+                    <div class="section-header">
+                        <h2 class="section-title">Beers on Tap</h2>
+                        <div class="section-divider"></div>
+                    </div>
+                    <div id="beers-container" class="items-grid">
+                        <!-- Beers will be loaded here via hardcoded data -->
+                        <div class="loading-placeholder">Loading beers...</div>
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2026 MESTRE Craft Beer Bar. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
