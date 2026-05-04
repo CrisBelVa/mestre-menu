@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MESTRE – Tapas Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset ── */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ── Variables ── */
+        :root {
+            --orange: #F57C00;
+            --black: #000000;
+            --white: #FFFFFF;
+            --dark-brown: #2B1B0F;
+            --light-bg: #faf8f5;
+        }
+
+        /* ── Page / Screen wrapper ── */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #e8e4df;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+
+        /* ── Print button (screen only) ── */
+        .print-btn {
+            margin-bottom: 24px;
+            padding: 12px 32px;
+            background: var(--orange);
+            color: var(--white);
+            border: none;
+            border-radius: 999px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .print-btn:hover { background: #e06500; }
+
+        /* ── A4 page ── */
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            background: var(--white);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* ── Header ── */
+        .page-header {
+            background: var(--dark-brown);
+            padding: 32px 40px 28px;
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .page-header img {
+            width: 80px;
+            height: auto;
+            flex-shrink: 0;
+        }
+
+        .header-text h1 {
+            font-family: 'Bevan', serif;
+            font-size: 2.6rem;
+            color: var(--white);
+            letter-spacing: 6px;
+            line-height: 1;
+        }
+
+        .header-text p {
+            font-size: 0.75rem;
+            color: var(--orange);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 6px;
+            font-weight: 600;
+        }
+
+        /* ── Orange divider ── */
+        .divider {
+            height: 6px;
+            background: var(--orange);
+        }
+
+        /* ── Body ── */
+        .page-body {
+            flex: 1;
+            padding: 40px 40px 32px;
+        }
+
+        .section-label {
+            font-family: 'Bevan', serif;
+            font-size: 1.1rem;
+            color: var(--orange);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 28px;
+        }
+
+        /* ── Items ── */
+        .items-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 18px 0;
+            border-bottom: 1px solid #ede9e4;
+        }
+
+        .menu-item:last-child { border-bottom: none; }
+
+        .item-left { flex: 1; padding-right: 20px; }
+
+        .item-name {
+            font-family: 'Bevan', serif;
+            font-size: 1.15rem;
+            color: var(--black);
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .item-description {
+            font-size: 0.82rem;
+            color: #6b5c4e;
+            line-height: 1.5;
+            font-weight: 400;
+        }
+
+        .item-price {
+            font-family: 'Bevan', serif;
+            font-size: 1.2rem;
+            color: var(--orange);
+            white-space: nowrap;
+            padding-top: 2px;
+        }
+
+        /* ── Dot leaders ── */
+        .item-dots {
+            flex: 1;
+            border-bottom: 2px dotted #d4c9be;
+            margin: 0 12px;
+            margin-bottom: 6px;
+            align-self: flex-end;
+        }
+
+        /* ── Footer ── */
+        .page-footer {
+            background: var(--dark-brown);
+            padding: 16px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-footer p {
+            font-size: 0.72rem;
+            color: rgba(255,255,255,0.5);
+            letter-spacing: 1px;
+        }
+
+        .footer-brand {
+            font-family: 'Bevan', serif;
+            font-size: 0.9rem;
+            color: var(--orange);
+            letter-spacing: 3px;
+        }
+
+        /* ── Print styles ── */
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                background: none;
+                padding: 0;
+                display: block;
+            }
+
+            .print-btn { display: none; }
+
+            .page {
+                width: 100%;
+                min-height: 100vh;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="print-btn" onclick="window.print()">🖨 Print Menu</button>
+
+    <div class="page">
+
+        <header class="page-header">
+            <img src="mestre-logo.png" alt="MESTRE Logo">
+            <div class="header-text">
+                <h1>MESTRE</h1>
+                <p>Craft Beer Bar · Porto</p>
+            </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <main class="page-body">
+            <div class="section-label">Tapas</div>
+
+            <div class="items-list">
+
+                <div class="menu-item">
+                    <div class="item-left">
+                        <div class="item-name">Olives</div>
+                        <div class="item-description">Olives with oil and garlic</div>
+                    </div>
+                    <div class="item-dots"></div>
+                    <div class="item-price">€4.50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-left">
+                        <div class="item-name">Empanadas</div>
+                        <div class="item-description">Crispy pastry pockets filled with savory flavors</div>
+                    </div>
+                    <div class="item-dots"></div>
+                    <div class="item-price">€8.50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-left">
+                        <div class="item-name">Patacones</div>
+                        <div class="item-description">Twice-fried green plantain slices, golden and crispy</div>
+                    </div>
+                    <div class="item-dots"></div>
+                    <div class="item-price">€6.00</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-left">
+                        <div class="item-name">Papas Fritas</div>
+                        <div class="item-description">Perfectly seasoned crispy French fries</div>
+                    </div>
+                    <div class="item-dots"></div>
+                    <div class="item-price">€5.50</div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="item-left">
+                        <div class="item-name">Yucas Fritas</div>
+                        <div class="item-description">Golden fried cassava root, served with dipping sauce</div>
+                    </div>
+                    <div class="item-dots"></div>
+                    <div class="item-price">€7.00</div>
+                </div>
+
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <p>mestrecraftbeer.com</p>
+            <span class="footer-brand">MESTRE</span>
+            <p>Porto, Portugal</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>

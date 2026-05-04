@@ -175,25 +175,25 @@ document.addEventListener('DOMContentLoaded', () => {
     const backButton = document.getElementById('back-button');
     const tapasSection = document.getElementById('tapas-section');
     const beersSection = document.getElementById('beers-section');
+    const drinksSection = document.getElementById('drinks-section');
+    const allSections = [tapasSection, beersSection, drinksSection];
 
     document.querySelectorAll('.selection-box').forEach(box => {
         box.addEventListener('click', () => {
             const section = box.dataset.section;
+            allSections.forEach(s => s.classList.add('hidden'));
             landingPage.classList.add('hidden');
             menuContent.classList.remove('hidden');
 
-            if (section === 'tapas') {
-                tapasSection.classList.remove('hidden');
-                beersSection.classList.add('hidden');
-            } else {
-                tapasSection.classList.add('hidden');
-                beersSection.classList.remove('hidden');
-            }
+            if (section === 'tapas') tapasSection.classList.remove('hidden');
+            else if (section === 'beers') beersSection.classList.remove('hidden');
+            else if (section === 'drinks') drinksSection.classList.remove('hidden');
         });
     });
 
     backButton.addEventListener('click', () => {
         menuContent.classList.add('hidden');
+        allSections.forEach(s => s.classList.remove('hidden'));
         landingPage.classList.remove('hidden');
     });
 });
