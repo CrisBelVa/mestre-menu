@@ -1,7 +1,8 @@
 section,name,abv,ibu,style
-BEERS ON TAP | CERVEJAS A PRESSÃ0(3 Items),Punk IPA,IPA - American 5.2% ABV,35 IBU,BrewDog
-BEERS ON TAP | CERVEJAS A PRESSÃ0(3 Items),Baltic Porter Nitro,Porter - Baltic 7.3% ABV,N/A IBU,Browar Stu Mostów
-BEERS ON TAP | CERVEJAS A PRESSÃ0(3 Items),Budweiser Budvar / Czechvar Original,Pilsner - Czech / Bohemian 5% ABV,32 IBU,Budějovický Budvar
+BEERS ON TAP | CERVEJAS A PRESSÃ0(4 Items),Joe Da Silva,Pale Ale - American 5.5% ABV,37 IBU,Oitava Colina
+BEERS ON TAP | CERVEJAS A PRESSÃ0(4 Items),Creature,IPA - American 6.3% ABV,55 IBU,Dois Corvos
+BEERS ON TAP | CERVEJAS A PRESSÃ0(4 Items),Baltic Porter Nitro,Porter - Baltic 7.3% ABV,N/A IBU,Browar Stu Mostów
+BEERS ON TAP | CERVEJAS A PRESSÃ0(4 Items),Budweiser Budvar / Czechvar Original,Pilsner - Czech / Bohemian 5% ABV,22 IBU,Budějovický Budvar
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),The Ruling Clash,IPA - New England / Hazy 6% ABV,N/A IBU,Dois Corvos
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Exhibit at the Mofo,Barleywine - Other 10.5% ABV,N/A IBU,Dois Corvos
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),St. Antonius 10 Cognac Barrel Aged,Belgian Strong Dark Ale 11.5% ABV,N/A IBU,Barona Brewing Company
@@ -41,11 +42,11 @@ PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Letra D,Red Ale - American Amb
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Letra E,Belgian Strong Dark Ale 9% ABV,27 IBU,LETRA Brewery
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Roca,Red Ale - Other 5.2% ABV,25 IBU,HopSin Craft Beer
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Vila Prazeres,Sour - Fruited 4.8% ABV,10 IBU,Oitava Colina
-PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Prickly Pear,Fruit Beer 6% ABV,N/A IBU,A.M.O.
-PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Pink Sunglasses,Fruit Beer 4% ABV,N/A IBU,A.M.O.
-PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Andorinha,Pale Ale - Other 5.2% ABV,20 IBU,A.M.O.
+PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Prickly Pear,Fruit Beer 6% ABV,N/A IBU,A.M.O. Brewery
+PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Pink Sunglasses,Fruit Beer 4% ABV,N/A IBU,A.M.O. Brewery
+PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Andorinha,Pale Ale - Other 5.2% ABV,20 IBU,A.M.O. Brewery
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Dias De Bazófia Gose Com Pera E Canela,Sour - Fruited Gose 4.2% ABV,7 IBU,Oitava Colina
-PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Palamino Blonde,Belgian Blonde 5.9% ABV,N/A IBU,A.M.O.
+PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Palamino Blonde,Belgian Blonde 5.9% ABV,N/A IBU,A.M.O. Brewery
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Red Zeppelin,IPA - Red 5% ABV,35 IBU,Cerveja Musa
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Twist And Stout,Stout - Oatmeal 6% ABV,35 IBU,Cerveja Musa
 PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items),Punk Rock,Red Ale - American Amber / Red 6.7% ABV,60 IBU,Sarrafusca Craft Beer

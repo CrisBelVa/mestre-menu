@@ -1,23 +1,30 @@
 [
   {
-    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(3 Items)",
-    "name": "Punk IPA",
-    "abv": "IPA - American 5.2% ABV",
-    "ibu": "35 IBU",
-    "style": "BrewDog"
+    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(4 Items)",
+    "name": "Joe Da Silva",
+    "abv": "Pale Ale - American 5.5% ABV",
+    "ibu": "37 IBU",
+    "style": "Oitava Colina"
   },
   {
-    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(3 Items)",
+    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(4 Items)",
+    "name": "Creature",
+    "abv": "IPA - American 6.3% ABV",
+    "ibu": "55 IBU",
+    "style": "Dois Corvos"
+  },
+  {
+    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(4 Items)",
     "name": "Baltic Porter Nitro",
     "abv": "Porter - Baltic 7.3% ABV",
     "ibu": "N/A IBU",
     "style": "Browar Stu Most\u00f3w"
   },
   {
-    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(3 Items)",
+    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(4 Items)",
     "name": "Budweiser Budvar / Czechvar Original",
     "abv": "Pilsner - Czech / Bohemian 5% ABV",
-    "ibu": "32 IBU",
+    "ibu": "22 IBU",
     "style": "Bud\u011bjovick\u00fd Budvar"
   },
   {
@@ -298,21 +305,21 @@
     "name": "Prickly Pear",
     "abv": "Fruit Beer 6% ABV",
     "ibu": "N/A IBU",
-    "style": "A.M.O."
+    "style": "A.M.O. Brewery"
   },
   {
     "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items)",
     "name": "Pink Sunglasses",
     "abv": "Fruit Beer 4% ABV",
     "ibu": "N/A IBU",
-    "style": "A.M.O."
+    "style": "A.M.O. Brewery"
   },
   {
     "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items)",
     "name": "Andorinha",
     "abv": "Pale Ale - Other 5.2% ABV",
     "ibu": "20 IBU",
-    "style": "A.M.O."
+    "style": "A.M.O. Brewery"
   },
   {
     "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items)",
@@ -326,7 +333,7 @@
     "name": "Palamino Blonde",
     "abv": "Belgian Blonde 5.9% ABV",
     "ibu": "N/A IBU",
-    "style": "A.M.O."
+    "style": "A.M.O. Brewery"
   },
   {
     "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(47 Items)",

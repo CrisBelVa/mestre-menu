@@ -104,16 +104,22 @@ async function fetchBeersFromJSON() {
         const response = await fetch('beers_on_tap.json');
         if (!response.ok) throw new Error('Failed to load beer data');
         const beers = await response.json();
-        
-        // Transform the data to match expected format
-        return beers.map(beer => ({
-            name: beer.name || 'Unknown Beer',
-            brewery: beer.style && beer.style.includes('|') ? beer.style.split('|')[1].trim() : 'Unknown Brewery',
-            style: beer.abv ? beer.abv.split(' ').slice(0, -3).join(' ') : beer.style || 'Unknown Style',
-            abv: beer.abv && beer.abv.includes('%') ? beer.abv.match(/\d+\.?\d*(?=%)/)[0] : 'N/A',
-            ibu: beer.ibu || 'N/A',
-            section: beer.section || 'On Tap'
-        }));
+
+        const onTapBeers = beers.filter(beer => beer.section && beer.section.includes('BEERS ON TAP'));
+
+        return onTapBeers.map(beer => {
+            const styleMatch = beer.abv ? beer.abv.match(/^(.+?)\s+\d+\.?\d*%/) : null;
+            const abvMatch = beer.abv ? beer.abv.match(/(\d+\.?\d*)%/) : null;
+            const ibuMatch = beer.ibu ? beer.ibu.match(/(\d+\.?\d*)/) : null;
+
+            return {
+                name: beer.name || 'Unknown Beer',
+                brewery: beer.style || 'Unknown Brewery',
+                style: styleMatch ? styleMatch[1] : 'Unknown Style',
+                abv: abvMatch ? abvMatch[1] : 'N/A',
+                ibu: ibuMatch ? ibuMatch[1] : 'N/A'
+            };
+        });
     } catch (error) {
         console.error('Error loading beer data from JSON:', error);
         return [];
@@ -154,8 +160,7 @@ function renderBeers(beers) {
  * Initialize menu - Load beers on page load
  */
 async function initializeMenu() {
-    // Load beers from hardcoded data
-    let beers = await loadBeersFromJSON();
+    let beers = await fetchBeersFromJSON();
     console.log('DEBUG: loaded beers', beers);
     
     if (!beers || beers.length === 0) {
