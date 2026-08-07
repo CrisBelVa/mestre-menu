@@ -1,415 +1,226 @@
 [
   {
-    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(5 Items)",
-    "name": "Sharpshooter",
-    "abv": "IPA - American 6.5% ABV",
-    "ibu": "50 IBU",
-    "style": "Fermentage"
+    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(4 Items)",
+    "name": "Triple Fruited Mango (4.8%)",
+    "abv": "Sour - Fruited 4.8% ABV",
+    "ibu": "N/A IBU",
+    "style": "Vault City Brewing"
   },
   {
-    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(5 Items)",
+    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(4 Items)",
     "name": "Original (TAP07)",
     "abv": "Wheat Beer - Hefeweizen 5.4% ABV",
     "ibu": "14 IBU",
     "style": "Schneider Weisse G. Schneider & Sohn"
   },
   {
-    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(5 Items)",
-    "name": "Joe Da Silva",
-    "abv": "Pale Ale - American 5.5% ABV",
-    "ibu": "37 IBU",
+    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(4 Items)",
+    "name": "Urraca Vendaval",
+    "abv": "IPA - American 6% ABV",
+    "ibu": "58 IBU",
     "style": "Oitava Colina"
   },
   {
-    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(5 Items)",
-    "name": "Baltic Porter Nitro",
-    "abv": "Porter - Baltic 7.3% ABV",
-    "ibu": "N/A IBU",
-    "style": "Browar Stu Most\u00f3w"
-  },
-  {
-    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(5 Items)",
+    "section": "BEERS ON TAP | CERVEJAS A PRESS\u00c30(4 Items)",
     "name": "Budweiser Budvar / Czechvar Original",
     "abv": "Pilsner - Czech / Bohemian 5% ABV",
     "ibu": "22 IBU",
     "style": "Bud\u011bjovick\u00fd Budvar"
   },
   {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Silver Coast Craft Cider Pear & Ginger",
-    "abv": "Cider - Other Fruit 5.3% ABV",
-    "ibu": "N/A IBU",
-    "style": "Silver Coast Craft Cider"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Punk Rock",
-    "abv": "Red Ale - American Amber / Red 6.7% ABV",
-    "ibu": "60 IBU",
-    "style": "Sarrafusca Craft Beer"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Liberdade",
-    "abv": "IPA - Other 5% ABV",
-    "ibu": "35 IBU",
-    "style": "Sarrafusca Craft Beer"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
+    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(7 Items)",
     "name": "Borboletas",
     "abv": "Pale Ale - American 5.4% ABV",
     "ibu": "56 IBU",
     "style": "A.M.O. Brewery"
   },
   {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
+    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(7 Items)",
     "name": "Raposinha Coffee Pale Ale",
     "abv": "Pale Ale - Other 4.8% ABV",
     "ibu": "N/A IBU",
     "style": "A.M.O. Brewery"
   },
   {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Goseling",
-    "abv": "Sour - Other Gose 3.7% ABV",
+    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(7 Items)",
+    "name": "Rebel Dry Cider",
+    "abv": "Cider - Dry 7.5% ABV",
     "ibu": "N/A IBU",
-    "style": "A.M.O. Brewery"
+    "style": "Silver Coast Craft Cider"
   },
   {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Fruited Sour Ab\u00f3bora e especiarias de Natal",
-    "abv": "Sour - Smoothie / Pastry 4% ABV",
+    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(7 Items)",
+    "name": "Silver Coast Craft Cider Pear & Ginger",
+    "abv": "Cider - Other Fruit 5.3% ABV",
     "ibu": "N/A IBU",
-    "style": "Cerveja Vadia"
+    "style": "Silver Coast Craft Cider"
   },
   {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Vadia 100",
-    "abv": "Non-Alcoholic - Other Beer 0.5% ABV",
-    "ibu": "14 IBU",
-    "style": "Cerveja Vadia"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Slow Clap",
-    "abv": "Non-Alcoholic - IPA 0.5% ABV",
-    "ibu": "5 IBU",
-    "style": "Dois Corvos"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Bitter Critter",
-    "abv": "Bitter - Best 4% ABV",
+    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(7 Items)",
+    "name": "Black Is the New Orange",
+    "abv": "Stout - Imperial / Double 10.5% ABV",
     "ibu": "N/A IBU",
     "style": "Dois Corvos"
   },
   {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "L\u00d6YLY",
-    "abv": "IPA - Other 3% ABV",
-    "ibu": "33 IBU",
-    "style": "Oitava Colina"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Creature",
-    "abv": "IPA - American 6.3% ABV",
-    "ibu": "55 IBU",
-    "style": "Dois Corvos"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Z\u00e9 Arnaldo",
-    "abv": "Porter - Other 6% ABV",
-    "ibu": "37 IBU",
-    "style": "Oitava Colina"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Finisterra",
-    "abv": "Porter - Imperial / Double 8.5% ABV",
-    "ibu": "50 IBU",
-    "style": "Dois Corvos"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Pink Marshmallow Sour",
-    "abv": "Sour - Fruited 3.2% ABV",
-    "ibu": "N/A IBU",
-    "style": "Censurada Cerveja Artesanal"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Orangette Pastry Sour",
-    "abv": "Sour - Smoothie / Pastry 3.2% ABV",
-    "ibu": "N/A IBU",
-    "style": "Censurada Cerveja Artesanal"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Tripel Kings",
-    "abv": "Belgian Tripel 8.3% ABV",
-    "ibu": "28 IBU",
-    "style": "Senescal Brewery"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
+    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(7 Items)",
     "name": "Lisbon Whites",
     "abv": "IPA - Other 6.5% ABV",
     "ibu": "N/A IBU",
     "style": "HopSin Craft Beer"
   },
   {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Amor",
-    "abv": "Fruit Beer 3.5% ABV",
-    "ibu": "13 IBU",
-    "style": "Sarrafusca Craft Beer"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Letra D",
-    "abv": "Red Ale - American Amber / Red 6% ABV",
-    "ibu": "27 IBU",
-    "style": "LETRA Brewery"
-  },
-  {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
+    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(7 Items)",
     "name": "Roca",
     "abv": "Red Ale - Other 5.2% ABV",
     "ibu": "25 IBU",
     "style": "HopSin Craft Beer"
   },
   {
-    "section": "PORTUGUESE BEERS / CERVEJAS PORTUGUESAS(22 Items)",
-    "name": "Vila Prazeres",
-    "abv": "Sour - Fruited 4.8% ABV",
-    "ibu": "10 IBU",
-    "style": "Oitava Colina"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Urban Ghost",
-    "abv": "IPA - Triple New England / Hazy 9.5% ABV",
-    "ibu": "N/A IBU",
-    "style": "Blech.Brut"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "POP!",
-    "abv": "IPA - New England / Hazy 6.5% ABV",
-    "ibu": "N/A IBU",
-    "style": "Blech.Brut"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Buy Or Die Slime",
-    "abv": "Pale Ale - New England / Hazy 5.7% ABV",
-    "ibu": "N/A IBU",
-    "style": "Blech.Brut"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Aecht Schlenkerla Eiche \u2013 Doppelbock",
-    "abv": "Rauchbier 8% ABV",
-    "ibu": "40 IBU",
-    "style": "Schlenkerla (\"Heller-Br\u00e4u\" Trum)"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Helles Schlenkerla Lagerbier",
-    "abv": "Lager - Helles 4.3% ABV",
-    "ibu": "30 IBU",
-    "style": "Schlenkerla (\"Heller-Br\u00e4u\" Trum)"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Fr\u00fch K\u00f6lsch",
-    "abv": "K\u00f6lsch 4.8% ABV",
-    "ibu": "19 IBU",
-    "style": "C\u00f6lner Hofbr\u00e4u Fr\u00fch"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Leikeim Steinbier Original",
-    "abv": "Historical Beer - Steinbier 5.8% ABV",
-    "ibu": "N/A IBU",
-    "style": "Brauhaus Leikeim"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Gruut Wit",
-    "abv": "Historical Beer - Gruit / Ancient Herbed Ale 5% ABV",
-    "ibu": "12 IBU",
-    "style": "Gentse Gruut Stadsbrouwerij"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Hero West Coast IPA",
-    "abv": "Non-Alcoholic - IPA 0.5% ABV",
-    "ibu": "N/A IBU",
-    "style": "Basqueland Brewing"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Hero IPA",
-    "abv": "Non-Alcoholic - IPA 0.5% ABV",
-    "ibu": "N/A IBU",
-    "style": "Basqueland Brewing"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Octo Allover",
-    "abv": "IPA - New England / Hazy 6.5% ABV",
-    "ibu": "N/A IBU",
-    "style": "Blech.Brut"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Make Brains Strong Again",
-    "abv": "IPA - Imperial / Double New England / Hazy 8% ABV",
-    "ibu": "N/A IBU",
-    "style": "Blech.Brut"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Freebird",
-    "abv": "Gluten-Free 6% ABV",
-    "ibu": "63 IBU",
-    "style": "Basqueland Brewing"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Imparable",
-    "abv": "IPA - American 6.8% ABV",
-    "ibu": "62 IBU",
-    "style": "Basqueland Brewing"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Max Drift",
-    "abv": "IPA - Other 6.5% ABV",
-    "ibu": "30 IBU",
-    "style": "Basqueland Brewing"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Zapfenduster",
-    "abv": "Stout - Imperial / Double 8.5% ABV",
-    "ibu": "52 IBU",
-    "style": "Brauerei Kundm\u00fcller"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Gruut Inferno",
-    "abv": "Historical Beer - Gruit / Ancient Herbed Ale 9% ABV",
-    "ibu": "23 IBU",
-    "style": "Gentse Gruut Stadsbrouwerij"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Iron Brew",
-    "abv": "Sour - Other 4.8% ABV",
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Cloudy Lemonade (Citra & Nelson Sauvin)",
+    "abv": "Sour - Fruited 4.2% ABV",
     "ibu": "N/A IBU",
     "style": "Vault City Brewing"
   },
   {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Prior 8",
-    "abv": "Belgian Dubbel 8% ABV",
-    "ibu": "20 IBU",
-    "style": "Brouwerij St.Bernardus"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Autosave",
-    "abv": "IPA - New England / Hazy 6.8% ABV",
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Lovely Stuff",
+    "abv": "Stout - Foreign / Export 7.5% ABV",
     "ibu": "N/A IBU",
-    "style": "FUERST WIACEK Berlin"
+    "style": "Oso Brew Co"
   },
   {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Kosmos",
-    "abv": "IPA - New England / Hazy 5.5% ABV",
-    "ibu": "25 IBU",
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "J\u00f5uluporter",
+    "abv": "Porter - Imperial / Double 10% ABV",
+    "ibu": "N/A IBU",
     "style": "P\u00f5hjala"
   },
   {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Hazy Jane",
-    "abv": "IPA - New England / Hazy 5% ABV",
-    "ibu": "N/A IBU",
-    "style": "BrewDog"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
     "name": "O\u2019Hara\u2019s Irish Stout Nitro",
     "abv": "Stout - Irish Dry 4.3% ABV",
     "ibu": "36 IBU",
     "style": "O'Hara's Brewery"
   },
   {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Baltic Porter Nitro",
-    "abv": "Porter - Baltic 7.3% ABV",
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "BGM 2026 Local Bond",
+    "abv": "IPA - Sour 6.2% ABV",
     "ibu": "N/A IBU",
     "style": "Browar Stu Most\u00f3w"
   },
   {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Alexander",
+    "abv": "Sour - Flanders Red Ale 5.6% ABV",
+    "ibu": "9 IBU",
+    "style": "Brouwerij Rodenbach"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Gummies",
+    "abv": "Sour - Smoothie / Pastry 6% ABV",
+    "ibu": "N/A IBU",
+    "style": "Oso Brew Co"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Thirst Trap",
+    "abv": "IPA - Session 4.6% ABV",
+    "ibu": "N/A IBU",
+    "style": "Oso Brew Co"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Abstract Birthday",
+    "abv": "IPA - New England / Hazy 6.8% ABV",
+    "ibu": "N/A IBU",
+    "style": "FUERST WIACEK Berlin"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Punk IPA",
+    "abv": "IPA - American 5.2% ABV",
+    "ibu": "35 IBU",
+    "style": "BrewDog"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Hazy Jane",
+    "abv": "IPA - New England / Hazy 5% ABV",
+    "ibu": "N/A IBU",
+    "style": "BrewDog"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Hoppy Blinder",
+    "abv": "IPA - Imperial / Double New England / Hazy 8.5% ABV",
+    "ibu": "40 IBU",
+    "style": "Cervesa Espiga"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Pale Ale",
+    "abv": "Pale Ale - English 5% ABV",
+    "ibu": "30 IBU",
+    "style": "Cervesa Espiga"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Porter",
+    "abv": "Porter - English 5% ABV",
+    "ibu": "57 IBU",
+    "style": "Cervesa Espiga"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Hyperactive",
+    "abv": "IPA - American 7.5% ABV",
+    "ibu": "60 IBU",
+    "style": "Cervesa Espiga"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Blonde Ale",
+    "abv": "Gluten-Free 4.5% ABV",
+    "ibu": "25 IBU",
+    "style": "Cervesa Espiga"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Espiga Garage IPA",
+    "abv": "IPA - American 6% ABV",
+    "ibu": "56 IBU",
+    "style": "Cervesa Espiga"
+  },
+  {
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
     "name": "Delirium Nocturnum",
     "abv": "Belgian Strong Dark Ale 8.5% ABV",
     "ibu": "24 IBU",
     "style": "Delirium - Huyghe Brewery"
   },
   {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "La Trappe Quadrupel",
-    "abv": "Belgian Quadrupel 10% ABV",
-    "ibu": "22 IBU",
-    "style": "Bierbrouwerij De Koningshoeven"
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Prior 8",
+    "abv": "Belgian Dubbel 8% ABV",
+    "ibu": "20 IBU",
+    "style": "Brouwerij St.Bernardus"
   },
   {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Carlsberg",
-    "abv": "Pilsner - Other 5% ABV",
-    "ibu": "8 IBU",
-    "style": "Carlsberg Group"
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
+    "name": "Cotta 21",
+    "abv": "Blonde / Golden Ale - Other 5.6% ABV",
+    "ibu": "N/A IBU",
+    "style": "Mastri Birrai Umbri"
   },
   {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
+    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(21 Items)",
     "name": "Weaponized Stupidity",
     "abv": "Lager - Other 5.5% ABV",
     "ibu": "N/A IBU",
     "style": "Blech.Brut 8 Bit"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Singha",
-    "abv": "Lager - Pale 5% ABV",
-    "ibu": "20 IBU",
-    "style": "Boon Rawd Brewery"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "8 Year Anniversary Tropical Smoothie Sour Ale",
-    "abv": "Sour - Smoothie / Pastry 4.5% ABV",
-    "ibu": "N/A IBU",
-    "style": "\u0100rpus Brewing Co."
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "Autumn Hug",
-    "abv": "Sour - Smoothie / Pastry 4.5% ABV",
-    "ibu": "N/A IBU",
-    "style": "Browar Stu Most\u00f3w"
-  },
-  {
-    "section": "FOREIGN BEERS / CERVEJAS ESTRANGEIRAS(32 Items)",
-    "name": "O'Hara's Irish Stout",
-    "abv": "Stout - Irish Dry 4.3% ABV",
-    "ibu": "36 IBU",
-    "style": "O'Hara's Brewery"
   }
 ]
