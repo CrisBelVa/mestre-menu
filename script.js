@@ -181,7 +181,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const tapasSection = document.getElementById('tapas-section');
     const beersSection = document.getElementById('beers-section');
     const drinksSection = document.getElementById('drinks-section');
-    const allSections = [tapasSection, beersSection, drinksSection];
+    const combosSection = document.getElementById('combos-section');
+    const allSections = [tapasSection, beersSection, drinksSection, combosSection];
 
     document.querySelectorAll('.selection-box').forEach(box => {
         box.addEventListener('click', () => {
@@ -193,6 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (section === 'tapas') tapasSection.classList.remove('hidden');
             else if (section === 'beers') beersSection.classList.remove('hidden');
             else if (section === 'drinks') drinksSection.classList.remove('hidden');
+            else if (section === 'combos') combosSection.classList.remove('hidden');
         });
     });
 
