@@ -3,3 +3,7 @@
 __pycache__/
 *.pyc
 .DS_Store
+prospecting/data/
+# Original full-size photos (web versions are the .jpg files)
+proposta/img/*.HEIC
+proposta/img/*_bar.jpeg

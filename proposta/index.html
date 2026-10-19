@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Mestre da Cerveja – Proposta de Tapas</title>
+    <link rel="icon" href="../mestre-logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* ── Reset ── */
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+        /* ── Variables (MESTRE brand) ── */
+        :root {
+            --orange: #F57C00;
+            --orange-dark: #e06500;
+            --black: #000000;
+            --white: #FFFFFF;
+            --dark-brown: #2B1B0F;
+            --light-bg: #faf8f5;
+            --text: #3b2e24;
+            --muted: #6b5c4e;
+            --line: #ede9e4;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: #e8e4df;
+            color: var(--text);
+            line-height: 1.6;
+            padding: 32px 16px;
+        }
+
+        .page {
+            max-width: 860px;
+            margin: 0 auto;
+            background: var(--white);
+            box-shadow: 0 8px 40px rgba(0,0,0,0.18);
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        /* ── Header ── */
+        .page-header {
+            background: var(--dark-brown);
+            padding: 28px 40px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+        .page-header img { width: 72px; height: auto; flex-shrink: 0; }
+        .header-text { flex: 1; }
+        .header-text h1 {
+            font-family: 'Bevan', serif;
+            font-size: 2rem;
+            color: var(--white);
+            letter-spacing: 4px;
+            line-height: 1.1;
+        }
+        .header-text p {
+            font-size: 0.72rem;
+            color: var(--orange);
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-top: 6px;
+            font-weight: 600;
+        }
+
+        /* ── Language toggle ── */
+        .lang-toggle { display: flex; gap: 4px; align-self: flex-start; }
+        .lang-toggle button {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            padding: 6px 10px;
+            border: 1px solid rgba(255,255,255,0.3);
+            background: transparent;
+            color: rgba(255,255,255,0.7);
+            border-radius: 999px;
+            cursor: pointer;
+        }
+        .lang-toggle button.active { background: var(--orange); border-color: var(--orange); color: var(--white); }
+
+        .divider { height: 6px; background: var(--orange); }
+
+        /* ── Body ── */
+        .page-body { padding: 40px; }
+
+        .recipient {
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+        .recipient strong { color: var(--orange); }
+
+        .title {
+            font-family: 'Bevan', serif;
+            font-size: 2rem;
+            line-height: 1.2;
+            color: var(--dark-brown);
+            margin: 10px 0 20px;
+        }
+
+        .intro { font-size: 1rem; max-width: 640px; }
+        .intro p + p { margin-top: 12px; }
+
+        .section-label {
+            font-family: 'Bevan', serif;
+            font-size: 1rem;
+            color: var(--orange);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin: 40px 0 20px;
+        }
+
+        /* ── Product grid ── */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .product {
+            border: 1px solid var(--line);
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--light-bg);
+            display: flex;
+            flex-direction: column;
+        }
+        .product-photo {
+            position: relative;
+            aspect-ratio: 4 / 5;
+            background: linear-gradient(135deg, var(--orange), var(--dark-brown));
+        }
+        .product-photo img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 75%; /* phone photos: the plate sits low in the frame */
+            display: block;
+        }
+        /* Branded fallback when a photo is missing */
+        .product-photo .fallback {
+            position: absolute;
+            inset: 0;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        .product-photo.no-img img { display: none; }
+        .product-photo.no-img .fallback { display: flex; }
+
+        .product-info { padding: 16px 18px 20px; }
+        .product-name {
+            font-family: 'Bevan', serif;
+            font-size: 1.15rem;
+            color: var(--black);
+            letter-spacing: 1px;
+        }
+        .product-desc { font-size: 0.85rem; color: var(--muted); margin-top: 4px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+        .tag {
+            font-size: 0.72rem;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 999px;
+            background: rgba(245,124,0,0.12);
+            color: var(--orange-dark);
+        }
+
+        /* ── Benefits ── */
+        .benefits {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+        .benefit {
+            padding: 18px;
+            border-left: 4px solid var(--orange);
+            background: var(--light-bg);
+            border-radius: 0 10px 10px 0;
+        }
+        .benefit h3 { font-size: 0.95rem; font-weight: 700; color: var(--dark-brown); }
+        .benefit p { font-size: 0.82rem; color: var(--muted); margin-top: 4px; }
+
+        /* ── CTA ── */
+        .cta {
+            margin-top: 40px;
+            padding: 32px;
+            background: var(--dark-brown);
+            border-radius: 14px;
+            color: var(--white);
+            text-align: center;
+        }
+        .cta h2 { font-family: 'Bevan', serif; font-size: 1.4rem; letter-spacing: 1px; }
+        .cta p { color: rgba(255,255,255,0.75); margin: 8px auto 22px; max-width: 520px; font-size: 0.92rem; }
+        .cta-buttons { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 999px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .btn-primary { background: var(--orange); color: var(--white); }
+        .btn-primary:hover { background: var(--orange-dark); }
+        .btn-outline { border: 2px solid rgba(255,255,255,0.5); color: var(--white); }
+        .btn-outline:hover { background: rgba(255,255,255,0.1); }
+
+        /* ── Contact card ── */
+        .contact {
+            margin-top: 32px;
+            display: flex;
+            align-items: center;
+            gap: 18px;
+            padding-top: 24px;
+            border-top: 1px solid var(--line);
+        }
+        .contact-name { font-weight: 700; color: var(--dark-brown); }
+        .contact-role { font-size: 0.8rem; color: var(--muted); }
+        .contact-lines { margin-left: auto; text-align: right; font-size: 0.88rem; }
+        .contact-lines a { color: var(--text); text-decoration: none; display: block; }
+        .contact-lines a:hover { color: var(--orange); }
+
+        /* ── Footer ── */
+        .page-footer {
+            background: var(--dark-brown);
+            padding: 14px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        .page-footer p { font-size: 0.72rem; color: rgba(255,255,255,0.5); letter-spacing: 1px; }
+        .footer-brand { font-family: 'Bevan', serif; font-size: 0.9rem; color: var(--orange); letter-spacing: 3px; }
+
+        /* ── Phones ── */
+        @media (max-width: 640px) {
+            body { padding: 0; }
+            .page { border-radius: 0; box-shadow: none; }
+            .page-header { padding: 20px 16px; gap: 14px; }
+            .page-header img { width: 52px; }
+            .header-text h1 { font-size: 1.4rem; letter-spacing: 2px; }
+            .header-text p { letter-spacing: 1.5px; }
+            .page-body { padding: 28px 16px; }
+            .title { font-size: 1.5rem; }
+            .products, .benefits { grid-template-columns: 1fr; }
+            .cta { padding: 24px 16px; }
+            .contact { flex-direction: column; align-items: flex-start; }
+            .contact-lines { margin-left: 0; text-align: left; }
+            .page-footer { padding: 14px 16px; flex-wrap: wrap; }
+        }
+
+        /* ── Print / save as PDF ── */
+        @media print {
+            @page { size: A4; margin: 0; }
+            html { font-size: 13px; }
+            body { background: none; padding: 0; line-height: 1.45; }
+            .page-header { padding: 18px 32px; }
+            .title { margin: 6px 0 12px; }
+            .product-photo { aspect-ratio: 1 / 1; }
+            .page { max-width: none; box-shadow: none; border-radius: 0; }
+            .lang-toggle, .cta-buttons { display: none; }
+            .page-body { padding: 24px 32px; }
+            .section-label { margin: 22px 0 12px; }
+            .products { grid-template-columns: repeat(4, 1fr); gap: 10px; }
+            .product-info { padding: 10px; }
+            .product-name { font-size: 0.95rem; }
+            .product-desc { font-size: 0.75rem; }
+            .benefit { padding: 12px; }
+            .cta { margin-top: 22px; padding: 18px; }
+            .cta p { margin-bottom: 0; }
+            .contact { margin-top: 18px; padding-top: 14px; }
+            * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+
+        <header class="page-header">
+            <img src="../mestre-logo.png" alt="MESTRE">
+            <div class="header-text">
+                <h1>MESTRE DA CERVEJA</h1>
+                <p data-i18n="tagline">Craft Beer Bar · Campo de Ourique, Lisboa</p>
+            </div>
+            <div class="lang-toggle">
+                <button type="button" data-lang="pt">PT</button>
+                <button type="button" data-lang="en">EN</button>
+            </div>
+        </header>
+
+        <div class="divider"></div>
+
+        <main class="page-body">
+            <div class="recipient"><span data-i18n="to">Para</span>: <strong data-bar></strong></div>
+            <h2 class="title" data-i18n="title">Sabores colombianos para a vossa carta</h2>
+
+            <div class="intro">
+                <p data-i18n="intro1"></p>
+                <p data-i18n="intro2"></p>
+            </div>
+
+            <div class="section-label" data-i18n="productsLabel">Os nossos produtos</div>
+
+            <div class="products">
+                <article class="product">
+                    <div class="product-photo">
+                        <img src="img/empanadas.jpg" alt="Empanadas" loading="lazy">
+                        <span class="fallback">🥟</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name" data-i18n="empanadasName">Empanadas colombianas</div>
+                        <div class="product-desc" data-i18n="empanadasDesc"></div>
+                        <div class="tags">
+                            <span class="tag" data-i18n="chicken">Frango</span>
+                            <span class="tag" data-i18n="beef">Carne</span>
+                            <span class="tag" data-i18n="cheese">Queijo</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-photo">
+                        <img src="img/arepas.jpg" alt="Arepas" loading="lazy" style="object-position: center">
+                        <span class="fallback">🫓</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name" data-i18n="arepasName">Arepas colombianas</div>
+                        <div class="product-desc" data-i18n="arepasDesc"></div>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-photo">
+                        <img src="img/patacones.jpg" alt="Patacones" loading="lazy">
+                        <span class="fallback">🍌</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Patacones</div>
+                        <div class="product-desc" data-i18n="pataconesDesc"></div>
+                    </div>
+                </article>
+
+                <article class="product">
+                    <div class="product-photo">
+                        <img src="img/yuca.jpg" alt="Yuca frita" loading="lazy">
+                        <span class="fallback">🍠</span>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name" data-i18n="yucaName">Yuca frita</div>
+                        <div class="product-desc" data-i18n="yucaDesc"></div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-label" data-i18n="whyLabel">Porquê a Mestre</div>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <h3 data-i18n="b1Title"></h3>
+                    <p data-i18n="b1Text"></p>
+                </div>
+                <div class="benefit">
+                    <h3 data-i18n="b2Title"></h3>
+                    <p data-i18n="b2Text"></p>
+                </div>
+                <div class="benefit">
+                    <h3 data-i18n="b3Title"></h3>
+                    <p data-i18n="b3Text"></p>
+                </div>
+            </div>
+
+            <section class="cta">
+                <h2 data-i18n="ctaTitle"></h2>
+                <p data-i18n="ctaText"></p>
+                <div class="cta-buttons">
+                    <a class="btn btn-primary" id="wa-link" href="https://wa.me/351910492519" target="_blank" rel="noopener">WhatsApp</a>
+                    <a class="btn btn-outline" id="mail-link" href="mailto:contato@mestredacerveja.pt">Email</a>
+                </div>
+            </section>
+
+            <div class="contact">
+                <div>
+                    <div class="contact-name">Cristhian Beltrán</div>
+                    <div class="contact-role" data-i18n="role">Contacto comercial</div>
+                </div>
+                <div class="contact-lines">
+                    <a href="tel:+351910492519">📱 +351 910 492 519</a>
+                    <a href="mailto:contato@mestredacerveja.pt">✉️ contato@mestredacerveja.pt</a>
+                </div>
+            </div>
+        </main>
+
+        <footer class="page-footer">
+            <p>Rua Tomás da Anunciação 88B</p>
+            <span class="footer-brand">MESTRE</span>
+            <p>Campo de Ourique, Lisboa</p>
+        </footer>
+
+    </div>
+
+    <script>
+        const TEXT = {
+            pt: {
+                pageTitle: 'Mestre da Cerveja – Proposta de Tapas',
+                tagline: 'Craft Beer Bar · Campo de Ourique, Lisboa',
+                to: 'Para',
+                fallbackBar: 'o vosso espaço',
+                title: 'Sabores colombianos para a vossa carta',
+                intro1: 'Olá! Somos a Mestre da Cerveja, em Campo de Ourique, e gostaríamos de vos apresentar uma proposta de tapas colombianas, feitas artesanalmente e pensadas para complementar a oferta gastronómica do vosso espaço.',
+                intro2: 'Com esta parceria, podem oferecer aos vossos clientes sabores autênticos da cozinha colombiana, sem terem de assumir toda a produção internamente.',
+                productsLabel: 'Os nossos produtos',
+                empanadasName: 'Empanadas colombianas',
+                empanadasDesc: 'Massa de milho estaladiça, recheada e frita na hora.',
+                chicken: 'Frango',
+                beef: 'Carne',
+                cheese: 'Queijo',
+                arepasName: 'Arepas colombianas',
+                arepasDesc: 'Arepas de milho recheadas com queijo, feitas artesanalmente.',
+                pataconesDesc: 'Banana-pão verde, frita e estaladiça.',
+                yucaName: 'Yuca frita (mandioca)',
+                yucaDesc: 'Uma opção saborosa para acompanhar bebidas, petiscos ou outros pratos.',
+                whyLabel: 'Porquê a Mestre',
+                b1Title: 'Feito artesanalmente',
+                b1Text: 'Receitas colombianas autênticas, preparadas na nossa cozinha em Campo de Ourique.',
+                b2Title: 'Sem produção interna',
+                b2Text: 'Amplie a sua carta sem investir em equipa ou equipamento de cozinha.',
+                b3Title: 'Entrega à medida',
+                b3Text: 'Adaptamos produtos, quantidades, preços e condições de entrega às vossas necessidades.',
+                ctaTitle: 'Vamos provar?',
+                ctaText: 'Gostaríamos de vos visitar com uma pequena degustação, sem compromisso.',
+                role: 'Contacto comercial',
+                waText: bar => `Olá Cristhian! Vimos a proposta de tapas da Mestre da Cerveja${bar ? ' para ' + bar : ''} e gostaríamos de marcar uma degustação.`,
+                mailSubject: bar => `Degustação de tapas colombianas${bar ? ' – ' + bar : ''}`,
+            },
+            en: {
+                pageTitle: 'Mestre da Cerveja – Tapas Proposal',
+                tagline: 'Craft Beer Bar · Campo de Ourique, Lisbon',
+                to: 'For',
+                fallbackBar: 'your venue',
+                title: 'Colombian flavours for your menu',
+                intro1: 'Hello! We are Mestre da Cerveja, a craft beer bar in Campo de Ourique, and we would like to present a selection of handmade Colombian tapas, designed to complement the food offer at your venue.',
+                intro2: 'Through this partnership, you can offer your guests authentic Colombian flavours without having to take on all the production in-house.',
+                productsLabel: 'Our products',
+                empanadasName: 'Colombian empanadas',
+                empanadasDesc: 'Crispy corn pastry, filled and freshly fried.',
+                chicken: 'Chicken',
+                beef: 'Beef',
+                cheese: 'Cheese',
+                arepasName: 'Colombian arepas',
+                arepasDesc: 'Handmade corn arepas filled with cheese.',
+                pataconesDesc: 'Crispy fried green plantain.',
+                yucaName: 'Fried yuca (cassava)',
+                yucaDesc: 'A tasty option to pair with drinks, tapas or other dishes.',
+                whyLabel: 'Why Mestre',
+                b1Title: 'Handmade',
+                b1Text: 'Authentic Colombian recipes, prepared in our kitchen in Campo de Ourique.',
+                b2Title: 'No kitchen needed',
+                b2Text: 'Expand your menu without investing in kitchen staff or equipment.',
+                b3Title: 'Flexible delivery',
+                b3Text: 'We tailor products, quantities, prices and delivery terms to your needs.',
+                ctaTitle: 'Shall we have a taste?',
+                ctaText: 'We would love to visit you with a small, no-obligation tasting.',
+                role: 'Sales contact',
+                waText: bar => `Hi Cristhian! We saw the Mestre da Cerveja tapas proposal${bar ? ' for ' + bar : ''} and would like to book a tasting.`,
+                mailSubject: bar => `Colombian tapas tasting${bar ? ' – ' + bar : ''}`,
+            },
+        };
+
+        const params = new URLSearchParams(location.search);
+        const bar = (params.get('bar') || '').trim().slice(0, 80);
+
+        function render(lang) {
+            const t = TEXT[lang];
+            document.documentElement.lang = lang;
+            document.title = bar ? `${t.pageTitle} · ${bar}` : t.pageTitle;
+
+            // textContent keeps any ?bar= input as plain text
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                el.textContent = t[el.dataset.i18n];
+            });
+            document.querySelectorAll('[data-bar]').forEach(el => {
+                el.textContent = bar || t.fallbackBar;
+            });
+            document.querySelectorAll('[data-lang]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            document.getElementById('wa-link').href =
+                'https://wa.me/351910492519?text=' + encodeURIComponent(t.waText(bar));
+            document.getElementById('mail-link').href =
+                'mailto:contato@mestredacerveja.pt?subject=' + encodeURIComponent(t.mailSubject(bar));
+
+            const url = new URL(location.href);
+            url.searchParams.set('lang', lang);
+            history.replaceState(null, '', url);
+        }
+
+        document.querySelectorAll('[data-lang]').forEach(btn => {
+            btn.addEventListener('click', () => render(btn.dataset.lang));
+        });
+
+        // Show branded fallback for any missing photo
+        document.querySelectorAll('.product-photo img').forEach(img => {
+            const markMissing = () => img.parentElement.classList.add('no-img');
+            img.addEventListener('error', markMissing);
+            if (img.complete && img.naturalWidth === 0) markMissing();
+        });
+
+        render(params.get('lang') === 'en' ? 'en' : 'pt');
+    </script>
+
+</body>
+</html>
