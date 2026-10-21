@@ -53,10 +53,10 @@
         .header-text { flex: 1; }
         .header-text h1 {
             font-family: 'Bevan', serif;
-            font-size: 2rem;
+            font-size: 1.9rem;
             color: var(--white);
-            letter-spacing: 4px;
-            line-height: 1.1;
+            letter-spacing: 1px;
+            line-height: 1.2;
         }
         .header-text p {
             font-size: 0.72rem;
@@ -97,13 +97,7 @@
         }
         .recipient strong { color: var(--orange); }
 
-        .title {
-            font-family: 'Bevan', serif;
-            font-size: 2rem;
-            line-height: 1.2;
-            color: var(--dark-brown);
-            margin: 10px 0 20px;
-        }
+        .recipient + .intro { margin-top: 14px; }
 
         .intro { font-size: 1rem; max-width: 640px; }
         .intro p + p { margin-top: 12px; }
@@ -175,21 +169,6 @@
             color: var(--orange-dark);
         }
 
-        /* ── Benefits ── */
-        .benefits {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 16px;
-        }
-        .benefit {
-            padding: 18px;
-            border-left: 4px solid var(--orange);
-            background: var(--light-bg);
-            border-radius: 0 10px 10px 0;
-        }
-        .benefit h3 { font-size: 0.95rem; font-weight: 700; color: var(--dark-brown); }
-        .benefit p { font-size: 0.82rem; color: var(--muted); margin-top: 4px; }
-
         /* ── CTA ── */
         .cta {
             margin-top: 40px;
@@ -250,11 +229,9 @@
             .page { border-radius: 0; box-shadow: none; }
             .page-header { padding: 20px 16px; gap: 14px; }
             .page-header img { width: 52px; }
-            .header-text h1 { font-size: 1.4rem; letter-spacing: 2px; }
-            .header-text p { letter-spacing: 1.5px; }
+            .header-text h1 { font-size: 1.3rem; letter-spacing: 0.5px; }
             .page-body { padding: 28px 16px; }
-            .title { font-size: 1.5rem; }
-            .products, .benefits { grid-template-columns: 1fr; }
+            .products { grid-template-columns: 1fr; }
             .cta { padding: 24px 16px; }
             .contact { flex-direction: column; align-items: flex-start; }
             .contact-lines { margin-left: 0; text-align: left; }
@@ -267,7 +244,6 @@
             html { font-size: 13px; }
             body { background: none; padding: 0; line-height: 1.45; }
             .page-header { padding: 18px 32px; }
-            .title { margin: 6px 0 12px; }
             .product-photo { aspect-ratio: 1 / 1; }
             .page { max-width: none; box-shadow: none; border-radius: 0; }
             .lang-toggle, .cta-buttons { display: none; }
@@ -277,7 +253,6 @@
             .product-info { padding: 10px; }
             .product-name { font-size: 0.95rem; }
             .product-desc { font-size: 0.75rem; }
-            .benefit { padding: 12px; }
             .cta { margin-top: 22px; padding: 18px; }
             .cta p { margin-bottom: 0; }
             .contact { margin-top: 18px; padding-top: 14px; }
@@ -292,8 +267,7 @@
         <header class="page-header">
             <img src="../mestre-logo.png" alt="MESTRE">
             <div class="header-text">
-                <h1>MESTRE DA CERVEJA</h1>
-                <p data-i18n="tagline">Craft Beer Bar · Campo de Ourique, Lisboa</p>
+                <h1 data-i18n="title">Sabores colombianos para a vossa carta</h1>
             </div>
             <div class="lang-toggle">
                 <button type="button" data-lang="pt">PT</button>
@@ -305,7 +279,6 @@
 
         <main class="page-body">
             <div class="recipient"><span data-i18n="to">Para</span>: <strong data-bar></strong></div>
-            <h2 class="title" data-i18n="title">Sabores colombianos para a vossa carta</h2>
 
             <div class="intro">
                 <p data-i18n="intro1"></p>
@@ -355,7 +328,7 @@
 
                 <article class="product">
                     <div class="product-photo">
-                        <img src="img/yuca.jpg" alt="Yuca frita" loading="lazy">
+                        <img src="img/yuca.jpg" alt="Mandioca frita" loading="lazy">
                         <span class="fallback">🍠</span>
                     </div>
                     <div class="product-info">
@@ -363,23 +336,6 @@
                         <div class="product-desc" data-i18n="yucaDesc"></div>
                     </div>
                 </article>
-            </div>
-
-            <div class="section-label" data-i18n="whyLabel">Porquê a Mestre</div>
-
-            <div class="benefits">
-                <div class="benefit">
-                    <h3 data-i18n="b1Title"></h3>
-                    <p data-i18n="b1Text"></p>
-                </div>
-                <div class="benefit">
-                    <h3 data-i18n="b2Title"></h3>
-                    <p data-i18n="b2Text"></p>
-                </div>
-                <div class="benefit">
-                    <h3 data-i18n="b3Title"></h3>
-                    <p data-i18n="b3Text"></p>
-                </div>
             </div>
 
             <section class="cta">
@@ -415,11 +371,10 @@
         const TEXT = {
             pt: {
                 pageTitle: 'Mestre da Cerveja – Proposta de Tapas',
-                tagline: 'Craft Beer Bar · Campo de Ourique, Lisboa',
                 to: 'Para',
                 fallbackBar: 'o vosso espaço',
                 title: 'Sabores colombianos para a vossa carta',
-                intro1: 'Olá! Somos a Mestre da Cerveja, em Campo de Ourique, e gostaríamos de vos apresentar uma proposta de tapas colombianas, feitas artesanalmente e pensadas para complementar a oferta gastronómica do vosso espaço.',
+                intro1: 'Olá! Somos o Mestre da Cerveja, situados em Campo de Ourique, e gostaríamos de vos apresentar uma proposta de tapas colombianas, feitas artesanalmente e pensadas para complementar a oferta gastronómica do vosso espaço.',
                 intro2: 'Com esta parceria, podem oferecer aos vossos clientes sabores autênticos da cozinha colombiana, sem terem de assumir toda a produção internamente.',
                 productsLabel: 'Os nossos produtos',
                 empanadasName: 'Empanadas colombianas',
@@ -429,29 +384,21 @@
                 cheese: 'Queijo',
                 arepasName: 'Arepas colombianas',
                 arepasDesc: 'Arepas de milho recheadas com queijo, feitas artesanalmente.',
-                pataconesDesc: 'Banana-pão verde, frita e estaladiça.',
-                yucaName: 'Yuca frita (mandioca)',
+                pataconesDesc: 'Banana-pão verde, frita e estaladiça, acompanhada de guacamole e queijo.',
+                yucaName: 'Mandioca frita',
                 yucaDesc: 'Uma opção saborosa para acompanhar bebidas, petiscos ou outros pratos.',
-                whyLabel: 'Porquê a Mestre',
-                b1Title: 'Feito artesanalmente',
-                b1Text: 'Receitas colombianas autênticas, preparadas na nossa cozinha em Campo de Ourique.',
-                b2Title: 'Sem produção interna',
-                b2Text: 'Amplie a sua carta sem investir em equipa ou equipamento de cozinha.',
-                b3Title: 'Entrega à medida',
-                b3Text: 'Adaptamos produtos, quantidades, preços e condições de entrega às vossas necessidades.',
                 ctaTitle: 'Vamos provar?',
                 ctaText: 'Gostaríamos de vos visitar com uma pequena degustação, sem compromisso.',
                 role: 'Contacto comercial',
-                waText: bar => `Olá Cristhian! Vimos a proposta de tapas da Mestre da Cerveja${bar ? ' para ' + bar : ''} e gostaríamos de marcar uma degustação.`,
+                waText: bar => `Olá Cristhian! Vimos a proposta de tapas do Mestre da Cerveja${bar ? ' para ' + bar : ''} e gostaríamos de marcar uma degustação.`,
                 mailSubject: bar => `Degustação de tapas colombianas${bar ? ' – ' + bar : ''}`,
             },
             en: {
                 pageTitle: 'Mestre da Cerveja – Tapas Proposal',
-                tagline: 'Craft Beer Bar · Campo de Ourique, Lisbon',
                 to: 'For',
                 fallbackBar: 'your venue',
                 title: 'Colombian flavours for your menu',
-                intro1: 'Hello! We are Mestre da Cerveja, a craft beer bar in Campo de Ourique, and we would like to present a selection of handmade Colombian tapas, designed to complement the food offer at your venue.',
+                intro1: 'Hello! We are Mestre da Cerveja, based in Campo de Ourique, and we would like to present a selection of handmade Colombian tapas, designed to complement the food offer at your venue.',
                 intro2: 'Through this partnership, you can offer your guests authentic Colombian flavours without having to take on all the production in-house.',
                 productsLabel: 'Our products',
                 empanadasName: 'Colombian empanadas',
@@ -461,16 +408,9 @@
                 cheese: 'Cheese',
                 arepasName: 'Colombian arepas',
                 arepasDesc: 'Handmade corn arepas filled with cheese.',
-                pataconesDesc: 'Crispy fried green plantain.',
-                yucaName: 'Fried yuca (cassava)',
+                pataconesDesc: 'Crispy fried green plantain, served with guacamole and cheese.',
+                yucaName: 'Fried cassava',
                 yucaDesc: 'A tasty option to pair with drinks, tapas or other dishes.',
-                whyLabel: 'Why Mestre',
-                b1Title: 'Handmade',
-                b1Text: 'Authentic Colombian recipes, prepared in our kitchen in Campo de Ourique.',
-                b2Title: 'No kitchen needed',
-                b2Text: 'Expand your menu without investing in kitchen staff or equipment.',
-                b3Title: 'Flexible delivery',
-                b3Text: 'We tailor products, quantities, prices and delivery terms to your needs.',
                 ctaTitle: 'Shall we have a taste?',
                 ctaText: 'We would love to visit you with a small, no-obligation tasting.',
                 role: 'Sales contact',
